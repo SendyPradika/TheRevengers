@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgProduk"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="30dp">
+
+    <RelativeLayout
+        android:background="@color/bgProduk"
+        android:padding="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gambarProduk"
+            android:src="@drawable/produk"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="250dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/gambarProduk"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/namaProduk"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baju Sehari-hari"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/hargaProduk"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/namaProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.125.000"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cart"
+                    android:backgroundTint="@color/blue"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
